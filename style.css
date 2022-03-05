@@ -59,7 +59,7 @@ nav a:last-child {
 }
 
 article {
-    padding: 20px;
+    padding: 5px;
     background-color: #1B484F;
     display: grid;
     grid-template-columns: 1fr;
@@ -123,6 +123,7 @@ section {
 
 .articleHeader {
     font-family: 'Philosopher', sans-serif;
+    margin-top: 15px;
 }
 
 .articleHeader, .wide {
@@ -185,7 +186,7 @@ section {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     article {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
