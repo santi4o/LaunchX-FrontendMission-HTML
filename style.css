@@ -3,14 +3,15 @@
 }
 
 body {
-    background-color: #163837;
+    background-color: #102726;
     margin: 0px;
+    font-family: 'Philosopher', sans-serif;
 }
 
 header {
     background-color: #163837;
+    padding: 0px 10px;
     color: white;
-    padding: 10px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -18,7 +19,7 @@ header {
 
 .banner {
     background-image: url("img/banner.jpg");
-    height: 20vw;
+    height: 18vw;
     background-size:cover;
 }
 
@@ -31,8 +32,8 @@ header {
 
 .slogan {
     display: inline;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
     margin-top: auto;
     vertical-align: middle;
 }
@@ -62,6 +63,10 @@ article {
     background-color: #1B484F;
     display: grid;
     grid-template-columns: 1fr;
+    height: auto;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 article > h1 {
@@ -76,39 +81,48 @@ section {
 
 .itemBox {
     margin: 10px;
-    border-radius: 7%;
+    border-radius: 10px;
     background-color: white;
     overflow: hidden;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .itemPic {
     width: 100%;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .itemBox > p {
     text-align: center;
-    margin: 10px;
+    padding: 10px;
 }
 
 .itemBox > ul {
     margin: 10px;
 }
 
-.itemBox > div {
-    text-align: center;
-    background-color: #229C6E;
-    padding: 10px;
-}
-
 .itemBox a {
+    display: block;
     width: 100%;
     text-align: center;
     text-decoration: none;
     font-size:large;
     color: white;
+    background-color: #229C6E;
+    padding: 15px;
+    margin: 0px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.itemBox a:hover {
+    text-decoration: underline;
+}
+
+.articleHeader {
+    font-family: 'Philosopher', sans-serif;
 }
 
 .articleHeader, .wide {
@@ -131,6 +145,24 @@ section {
     background-color: #229C6E;
     color:white;
     border-radius: 10px;
+    text-decoration: none;
+}
+
+.wide a:hover {
+    text-decoration: underline;
+}
+
+#flavors > div > p {
+    margin: 5px;
+}
+
+.rounded {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    line-height: 2rem;
 }
 
 @media (min-width: 500px) {
@@ -153,7 +185,7 @@ section {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     article {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

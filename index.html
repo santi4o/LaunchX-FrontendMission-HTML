@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=dev.ice-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Tangerine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pastelería </title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="brand">
             <img class="logo" src="img/logo.png" alt="Dolce Dolce Pastelería">
             <p class="slogan">Experiencias para compartir</p>
         </div>
         <nav>
-            <a href="#">Sabores</a>
-            <a href="#">Decoraciones</a>
-            <a href="#">Hacer nuevo pedido</a>
-            <a href="#">Mis pedidos</a>
+            <a href="#">Hacer Nuevo Pedido</a>
+            <a href="#flavors">Sabores</a>
+            <a href="#covers">Cubiertas</a>
+            <a href="#decorations">Decoraciones</a>
             <a href="#">Mi cuenta</a>
         </nav>
     </header>
     <div class="banner"></div>
     <main>
         <section>
-            <article>
+            <article id="popular">
                 <h1 class="articleHeader">Populares</h1>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-chocolate.jpg" alt="Pastel de chocolate">
-                    <p>Pastel de chocolate</p>
+                    <p class="name">Chocolate</p>
                     <ul>
                         <li>Sabor: Chocolate</li>
                         <li>Decoraciones: Chocolate</li>
                     </ul>
-                    <p>$ 300</p>
-                    <div>
-                        <a href="#">Hacer pedido de este pastel</a>
-                    </div>
+                    <p class="price">$ 300</p>
+                    <a href="#">Hacer pedido de este pastel</a>
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-teverde.png" alt="Pastel de té verde">
-                    <p>Pastel de té verde</p>
+                    <p class="name">Té Verde</p>
                     <ul>
                         <li>Sabor: Té Verde</li>
                         <li>Decoraciones: Fresa-ciruela</li>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-fresa.jpg" alt="Pastel de fresa">
-                    <p>Pastel de fresa</p>
+                    <p class="name">Fresa</p>
                     <ul>
                         <li>Sabor: Fresa</li>
                         <li>Decoraciones: Fresa</li>
@@ -64,7 +65,7 @@
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-frutas.jpg" alt="Pastel de Vainilla">
-                    <p>Pastel de Vainilla con frutas</p>
+                    <p class="name">Vainilla - Frutal</p>
                     <ul>
                         <li>Sabor: Vainilla</li>
                         <li>Decoraciones: Frutal</li>
@@ -76,7 +77,7 @@
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-chocolate-cereza.jpg" alt="Pastel de chocolate con cerezas">
-                    <p>Pastel de chocolate con cerezas</p>
+                    <p class="name">Chocolate - Cerezas</p>
                     <ul>
                         <li>Sabor: Chocolate</li>
                         <li>Decoraciones: Cereza-chocolate</li>
@@ -88,7 +89,7 @@
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-vainilla-fresa.jpg" alt="Pastel de fresa">
-                    <p>Pastel de vainilla con fresas</p>
+                    <p class="name">Vainilla - Fresas</p>
                     <ul>
                         <li>Sabor: Vainilla</li>
                         <li>Decoraciones: Fresa</li>
@@ -100,7 +101,7 @@
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-mango.jpg" alt="Pastel de mango">
-                    <p>Pastel de Mango</p>
+                    <p class="name">Mango</p>
                     <ul>
                         <li>Sabor: Mango</li>
                         <li>Decoraciones: Mango-cereza</li>
@@ -112,7 +113,7 @@
                 </div>
                 <div class="itemBox">
                     <img class="itemPic" src="img/pastel-nueces.jpg" alt="Pastel de Nuez">
-                    <p>Pastel de nuez</p>
+                    <p class="name">Nuez</p>
                     <ul>
                         <li>Sabor: Nuez</li>
                         <li>Decoraciones: Chocolate-nuez</li>
@@ -123,37 +124,73 @@
                     </div>
                 </div>
                 <div class="wide">
-                    <a>Hacer nuevo pedido personalizado</a>
+                    <a href="#">Hacer nuevo pedido personalizado</a>
                 </div>
             </article>
 
-            <article>
+            <article id="flavors">
                 <h1 class="articleHeader">Sabores</h1>
-                <div class="itemBox rounded">
-                    <img class="itemPic rounded" src="img/Vainilla.jpg" alt="Vainilla">
+                <div class="itemBox">
+                    <img class="itemPic" src="img/Vainilla.jpg" alt="Vainilla">
                     <p>Vainilla</p>
                     <p>$ 260</p>
                 </div>
-                <div class="itemBox rounded">
-                    <img class="itemPic rounded" src="img/chocolate.png" alt="Chocolate">
+                <div class="itemBox">
+                    <img class="itemPic" src="img/chocolate.png" alt="Chocolate">
                     <p>Chocolate</p>
                     <p>$ 300</p>
                 </div>
-                <div class="itemBox rounded">
-                    <img class="itemPic rounded" src="img/fresa.jpg" alt="Fresa">
+                <div class="itemBox">
+                    <img class="itemPic" src="img/teverde.jpg" alt="Te Verde">
+                    <p>Té Verde</p>
+                    <p>$ 320</p>
+                </div>
+                <div class="itemBox">
+                    <img class="itemPic" src="img/fresa.jpg" alt="Fresa">
                     <p>Fresa</p>
                     <p>$ 320</p>
                 </div>
-                <div class="itemBox rounded">
-                    <img class="itemPic rounded" src="img/nuez.jpg" alt="Nuez">
+                <div class="itemBox">
+                    <img class="itemPic" src="img/nuez.jpg" alt="Nuez">
                     <p>Nuez</p>
                     <p>$ 320</p>
                 </div>
-                <div class="itemBox rounded">
-                    <img class="itemPic rounded" src="img/mango.jpg" alt="Mango">
+                <div class="itemBox">
+                    <img class="itemPic" src="img/mango.jpg" alt="Mango">
                     <p>Mango</p>
                     <p>$ 300</p>
                 </div>
+                <div class="itemBox">
+                    <img class="itemPic" src="img/limon.jpg" alt="Limon">
+                    <p>Limón</p>
+                    <p>$ 300</p>
+                </div>
+            </article>
+
+            <article id="covers">
+                <h1 class="articleHeader">Cubiertas</h1>
+                <div class="rounded">Fondant</div>
+                <div class="rounded">Chantillí</div>
+                <div class="rounded">Queso</div>
+                <div class="rounded">Chocolate</div>
+            </article>
+
+            <article id="decorations">
+                <h1 class="articleHeader">Decoraciones</h1>
+                <div class="rounded">Fresas</div>
+                <div class="rounded">Cerezas</div>
+                <div class="rounded">Mango</div>
+                <div class="rounded">Duraznos</div>
+                <div class="rounded">Uvas</div>
+                <div class="rounded">Kiwi</div>
+                <div class="rounded">Frutal</div>
+                <div class="rounded">Nueces</div>
+                <div class="rounded">Chocolate</div>
+                <div class="rounded">Galletas</div>
+                <div class="rounded">Flores de crema batida</div>
+                <div class="rounded">Gotas de crema batida</div>
+                <div class="rounded">Lunetas</div>
+                <div class="rounded">Chispas</div>
             </article>
         </section>
     </main>
