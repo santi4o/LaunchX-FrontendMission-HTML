@@ -307,3 +307,52 @@ select, #name, #tel, #email {
     display: inline-block;
     margin-bottom: 10px;
 }
+
+table {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child > td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child > td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+th, td {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+#inventory {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inventoryGroup {
+    padding: 5px;
+    margin: 10px;
+    background-color: #229C6E;
+    border-radius: 10px;
+}
+
+.inventoryGroup h1 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
