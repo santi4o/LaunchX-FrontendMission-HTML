@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Dolce Dolce</title>
 </head>
+
 <body>
     <header>
         <div class="brand">
@@ -27,36 +29,119 @@
     <div class="banner"></div>
     <main>
         <section class="order">
-            <!--El formulario debe de contener los datos de contacto del cliente
-                 que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel
-                 y la selección de sabores y adornos.-->
             <form action="" method="POST">
                 <p>Sabor de pastel</p>
-                <label for="flavor1">Sabor 1:</label>
-                <select name="flavor1" id="flavorChoice1">
-                    <option value="vanilla">Vainilla</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="green_tea">Té Verde</option>
-                    <option value="strawberry">Fresa</option>
-                    <option value="nut">Nuez</option>
-                    <option value="mango">Mango</option>
-                    <option value="lemon">Limón</option>
-                    <option value="coffee">Café</option>
-                </select>
-                <label for="flavor2">Sabor 2:</label>
-                <select name="flavor2" id="flavorChoice2">
-                    <option value="vanilla">Vainilla</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="green_tea">Té Verde</option>
-                    <option value="strawberry">Fresa</option>
-                    <option value="nut">Nuez</option>
-                    <option value="mango">Mango</option>
-                    <option value="lemon">Limón</option>
-                    <option value="coffee">Café</option>
-                </select>
+                <div class="flavors">
+                    <label for="flavor1">Sabor 1:</label>
+                    <select name="flavor1" id="flavorChoice1">
+                        <option value="vanilla">Vainilla</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="green_tea">Té Verde</option>
+                        <option value="strawberry">Fresa</option>
+                        <option value="nut">Nuez</option>
+                        <option value="mango">Mango</option>
+                        <option value="lemon">Limón</option>
+                        <option value="coffee">Café</option>
+                    </select>
+                </div>
+                <div class="flavors">
+                    <label for="flavor2">Sabor 2:</label>
+                    <select name="flavor2" id="flavorChoice2">
+                        <option value="vanilla">Vainilla</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="green_tea">Té Verde</option>
+                        <option value="strawberry">Fresa</option>
+                        <option value="nut">Nuez</option>
+                        <option value="mango">Mango</option>
+                        <option value="lemon">Limón</option>
+                        <option value="coffee">Café</option>
+                    </select>
+                </div>
+                <br>
                 <p>Cubierta</p>
+                <div class="radioGroup">
+                    <input type="radio" id="crema_batida" name="cover" value="crema_batida" checked>
+                    <label for="crema_batida">Crema Batida</label><br>
+                    <input type="radio" id="fondant" name="cover" value="fondant">
+                    <label for="fondant">Fondant</label><br>
+                    <input type="radio" id="chantilli" name="cover" value="chantilli">
+                    <label for="chantilli">Chantillí</label><br>
+                    <input type="radio" id="cheese" name="cover" value="cheese">
+                    <label for="cheese">Queso</label><br>
+                    <input type="radio" id="chocolate" name="cover" value="chocolate">
+                    <label for="chocolate">Chocolate</label><br>
+                </div>
                 <p>Decoraciones</p>
-                <input type="submit" value="Hacer pedido">
+                <div id="decorationsInput">
+                    <div>
+                        <input type="checkbox" id="fresas" name="fresas" value="Fresas">
+                        <label for="fresas">Fresas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cerezas" name="cerezas" value="cerezas">
+                        <label for="cerezas">Cerezas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mango" name="mango" value="mango">
+                        <label for="mango">Mango</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="duraznos" name="duraznos" value="duraznos">
+                        <label for="duraznos">Duraznos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="uvas" name="uvas" value="uvas">
+                        <label for="uvas">Uvas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kiwi" name="kiwi" value="kiwi">
+                        <label for="kiwi">Kiwi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nueces" name="nueces" value="nueces">
+                        <label for="nueces">Nueces</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                        <label for="chocolate">Chocolate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="galletas" name="galletas" value="galletas">
+                        <label for="galletas">Galletas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="flores" name="flores" value="flores">
+                        <label for="flores">Flores de crema batida</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gotas" name="gotas" value="gotas">
+                        <label for="gotas">Gotas de crema batida</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lunetas" name="lunetas" value="lunetas">
+                        <label for="lunetas">Lunetas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chispas" name="chispas" value="chispas">
+                        <label for="chispas">Chispas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mermelada" name="mermelada" value="mermelada">
+                        <label for="mermelada">Mermelada de zarzamora</label>
+                    </div>
+                </div>
+                <p>Notas adicionales</p>
+                <textarea id="notes" name="notes" rows="4" cols="30""></textarea>
+                <p>Datos de contacto</p>
+                <div id="contactInput">
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" name="name" pattern="[a-zA-Z]+" required>
+                    <label for="tel">Teléfono: </label>
+                    <input type="tel" id="tel" name="tel" placeholder="10 dígitos" pattern="[0-9]{10}" required>
+                    <label for="email">Correo electrónico: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <input id="submitBtn" type="submit" value="Hacer pedido">
             </form>
         </section>
     </main>
@@ -64,4 +149,5 @@
         <p>Footer</p>
     </footer>
 </body>
+
 </html>
