@@ -6,6 +6,9 @@ body {
     background-color: #102726;
     margin: 0px;
     font-family: 'Philosopher', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -19,7 +22,7 @@ header {
 
 .banner {
     background-image: url("img/banner.jpg");
-    height: 18vw;
+    height: 17vw;
     background-size:cover;
 }
 
@@ -133,7 +136,7 @@ section {
 
 .wide {
     font-size: 1.2rem;
-    margin-top: 15px;
+    margin: 15px;
 }
 
 .wide a {
@@ -164,6 +167,10 @@ section {
     padding: 10px;
     text-align: center;
     line-height: 2rem;
+}
+
+.order {
+    color: white
 }
 
 @media (min-width: 500px) {
@@ -212,4 +219,14 @@ section {
     .articleHeader, .wide {
         grid-column: 1/5;
     }
+}
+
+footer {
+    margin-top: auto;
+    background-color: white;
+    min-height: 30px;
+}
+
+.order form {
+    margin: 10px;
 }
