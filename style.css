@@ -239,8 +239,23 @@ section {
 
 footer {
     margin-top: auto;
-    background-color: white;
+    padding: 10px;
+    background-color: #1B484F;
+    color:white;
     min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div span {
+    margin-right: 5px;
 }
 
 .order form {
@@ -311,6 +326,7 @@ select, #name, #tel, #email {
 table {
     border: 1px solid white;
     border-radius: 10px;
+    margin: auto;
 }
 
 th:first-child {
@@ -342,6 +358,14 @@ th, td {
     align-items: center;
 }
 
+#orders {
+    display: block;
+    background-color: #229C6E;
+    margin: 10px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
 .inventoryGroup {
     padding: 5px;
     margin: 10px;
@@ -349,7 +373,7 @@ th, td {
     border-radius: 10px;
 }
 
-.inventoryGroup h1 {
+section h1 {
     font-family: 'Philosopher', sans-serif;
     text-align: center;
     margin-top: 10px;
