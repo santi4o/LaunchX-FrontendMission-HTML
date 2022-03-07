@@ -9,12 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: white;
 }
 
 header {
     background-color: #163837;
     padding: 0px 10px;
-    color: white;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -85,7 +85,7 @@ section {
 .itemBox {
     margin: 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #102726;
     overflow: hidden;
 }
 
@@ -163,10 +163,22 @@ section {
 .rounded {
     margin: 10px;
     border-radius: 10px;
-    background-color: white;
-    padding: 10px;
+    background-color: #229C6E;
     text-align: center;
     line-height: 2rem;
+    display: grid;
+    grid-template-columns: auto 25%;
+    overflow: hidden;
+    color: white;
+    border: 1px solid white;
+}
+
+.rounded div {
+    padding: 10px;
+}
+
+.rounded > div:last-child {
+    background-color: #163837;
 }
 
 .order {
